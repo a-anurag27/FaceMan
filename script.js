@@ -14,11 +14,24 @@ starCountRef.once('value', function(snapshot) {
 starCountRef.on('value', function(snapshot) {
 //   console.log(snapshot.val());
   data = snapshot.val();
-  var uddhavData = data["Uddhav"];
-  document.getElementById("name").innerHTML = uddhavData.Name;
-  document.getElementById("ts").innerHTML = uddhavData.TimeStamp;
+  //var uddhavData = data["Uddhav"];
+  //document.getElementById("name").innerHTML = uddhavData.Name;
+  //document.getElementById("ts").innerHTML = uddhavData.TimeStamp;
 
   var anuragData = data["Anurag"];
   document.getElementById("Aname").innerHTML = anuragData.Name;
   document.getElementById("Ats").innerHTML = anuragData.TimeStamp;
+    
+  var anuragData = data["nigel"];
+  document.getElementById("Aname").innerHTML = anuragData.Name;
+  document.getElementById("Ats").innerHTML = anuragData.TimeStamp;
+  
+  var anuragData = data["prithvi"];
+  document.getElementById("Aname").innerHTML = anuragData.Name;
+  document.getElementById("Ats").innerHTML = anuragData.TimeStamp;
+  
+  var anuragData = data["purvesh"];
+  document.getElementById("Aname").innerHTML = anuragData.Name;
+  document.getElementById("Ats").innerHTML = anuragData.TimeStamp;
+  
 });
