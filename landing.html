@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+    <title>FaceMan</title>
+    <body>
+            <h1 class="info1">FaceMan</h1> < 
+            <div class="watch">
+  
+                    <div class="outer-circle">
+                    </div>
+                    
+                    <div class="inner-circle">
+                    </div>
+                    
+                    <div class="display">
+                    </div>
+                    
+                    <div class="notification">
+                      <span class="notif-icon">
+                      </span>
+                      <p class="notif-text-1">
+                        <a href="index.html">Start</a>
+                      </p>
+                      <p class="notif-text-small">
+                        <br>2 seconds ago.
+                      </p>
+                    </div>
+
+                    <div class="bezel">
+                    </div>
+                    
+                    <div class="strap">
+                    </div>
+                    
+                    <div class="clock">
+                      <div class="hour">&#9679;</div>
+                      <div class="minute">&#9679;</div>
+                    </div>
+                    
+                    <div class="internal-nob">
+                    </div>
+                    
+                    <div class="external-nob">
+                    </div>
+                  
+                    <div class="info">
+                      <h1>Hover and Click over watch to start.</h1>
+                    </div>  
+                  </div>              
+                
+    </body>
+    <style>
+@import url(https://fonts.googleapis.com/css?family=Roboto); 
+
+html {
+   background: #0C131C;
+ }
+
+ a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+
+.watch {
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 130px;
+}
+
+.outer-circle {
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+  background: #666666;
+  -moz-border-radius: 150px;
+  -webkit-border-radius: 150px;
+  border-radius: 150px;
+  position: absolute;
+}
+
+.inner-circle {
+  margin: 0 auto;
+  width: 190px;
+  height: 190px;
+  background: black;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 150px;
+  position: absolute;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+.display {
+  margin: 0 auto;
+  width: 170px;
+  height: 170px;
+  background: #18222E;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 150px;
+  position: absolute;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+.bezel {
+  height:20px;
+  width:115px;
+  border-radius: 0 0 125px 120px;
+  -moz-border-radius: 0 0 90px 90px;
+  -webkit-border-radius: 0 0 90px 90px;
+  background:black;
+  position: absolute;
+  margin-top: 165px;
+  margin-left: 43px;
+  z-index: 3001;
+}
+
+.notification {
+  height:80px;
+  width:170px;
+  border-radius: 0 0 90px 90px;
+  -moz-border-radius: 0 0 90px 90px;
+  -webkit-border-radius: 0 0 90px 90px;
+  background: rgba(255,255,255, .8);
+  position: absolute;
+  margin-top: 102px;
+  margin-left: 15px;
+}
+
+.notif-text-1 {
+  margin-top: 8px;
+  margin-left: 25px;
+  margin-bottom: -8px;
+  font-size: 14px;
+  font-family: Roboto, sans-serif;
+}
+
+.notif-text-2 {
+  margin-left: 25px;
+  margin-bottom: -5px;
+  margin-top: 6px;
+  font-size: 14px;
+  font-family: Roboto, sans-serif;
+}
+
+.notif-text-small {
+  margin-top: 4px;
+  margin-left: 25px;
+  margin-bottom: -5px;
+  font-size: 10px;
+  color: #727272;
+  font-family: Roboto, sans-serif;
+}
+
+.notif-icon {
+  width: 25px;
+  height: 25px;
+  display: block;
+   -moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+  border-radius: 150px;
+  position: fixed;
+  margin-left: 135px;
+  margin-top: -15px;
+  background-repeat: no-repeat;
+  background-image: url('https://www.pinclipart.com/picdir/middle/333-3337429_smile-for-your-id-card-icon-address-card.png');
+  background-size: cover;
+
+}
+
+.notification {
+  opacity: 0;
+  background: rgba(255,255,255, .8);
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
+  -moz-transiton: opacity .5s;
+}
+
+.notification:hover{
+  opacity: 1;
+  z-index: 3000;
+}
+
+.strap {
+  width: 100px;
+  height: 300px;
+  background: #4B4B4B;
+  position: absolute;
+  margin-left: 50px;
+  margin-top: -50px;
+  z-index: -100;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+}
+
+
+.hour {
+  display: block;
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  margin-left: 58px;
+  margin-top: 60px;
+  font-size: 48px;
+  padding: 1px;
+  color: #FF4081;
+    -moz-border-radius: 150px;
+  -webkit-border-radius: 150px;
+  border-radius: 150px;
+  border: 2px solid #26384C;
+  
+  
+  -webkit-animation: spin-right 10s linear infinite;
+     -moz-animation: spin-right 10s linear infinite;
+      -ms-animation: spin-right 10s linear infinite;
+       -o-animation: spin-right 10s linear infinite;
+          animation: spin-right 10s linear infinite;
+   
+}
+
+
+.minute {
+  display: block;
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  margin-left: 43px;
+  margin-top: 44px;
+  font-size: 31px;
+  padding: 1px;
+  color: #40DBE5;
+    -moz-border-radius: 150px;
+  -webkit-border-radius: 150px;
+  border-radius: 150px;
+  border: 2px solid #26384C;
+  
+  
+  -webkit-animation: spin-right 3s linear infinite;
+     -moz-animation: spin-right 3s linear infinite;
+      -ms-animation: spin-right 3s linear infinite;
+       -o-animation: spin-right 3s linear infinite;
+          animation: spin-right 3s linear infinite;
+   
+}
+
+@-webkit-keyframes spin-right {
+  100% {
+    -webkit-transform: rotate(360deg);
+       -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+         -o-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin-right {
+  100% {
+    -webkit-transform: rotate(360deg);
+       -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+         -o-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+
+.internal-nob {
+  width: 25px;
+  height: 35px;
+  background: #4B4B4B;
+  position: absolute;
+  margin-left: 178px;
+  margin-top: 85px;
+  z-index: -100;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;  
+}
+
+.external-nob {
+  width: 25px;
+  height: 25px;
+  background: #666666;
+  position: absolute;
+  margin-left: 183px;
+  margin-top: 90px;
+  z-index: -1000;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;  
+}
+
+.info {
+  position: absolute;
+  width: 200px;
+  text-align: center;
+  margin-top: 300px;
+  font-size: 12px;
+  color: #fff;
+  font-family: Roboto, sans-serif;
+  opacity: .2;
+}
+.info1 {
+  position: absolute;
+  width: 200px;
+  text-align: center;
+  font-size: 45px;
+  color: #fff;
+  font-family: Roboto, sans-serif;
+  opacity: .7;
+  
+}
+    </style>
+</html>

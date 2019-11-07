@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>FaceMan</title>
+</head>
+<body> <h1>Recorded Value</h1>
+        <table>
+                <thead class="tbl-header">
+                  <tr>
+                      <th>Name</th>
+                      <th>Timestamp</th>
+                  </tr>
+                </thead>
+        
+                <tbody class="tbl-content"><!--
+                  <tr>
+                    <td id="name">------</td>
+                    <td id="ts">------</td>
+                  </tr>-->
+                  <tr>
+                        <td id="Aname">------</td>
+                        <td id="Ats">------</td>
+                  </tr>
+                  <tr>
+                      <td id="Prname">------</td>
+                      <td id="Prts">------</td>
+                  </tr>
+                  <tr>
+                    <td id="Sname">------</td>
+                    <td id="Sts">------</td>
+                  </tr>
+                  <tr>
+                      <td id="Zname">------</td>
+                      <td id="Zts">------</td>
+                    </tr>
+                  <tr>
+                        <td id="Pname">------</td>
+                        <td id="Pts">------</td>
+                    </tr>
+                     <tr>
+                    <td id="Nname">------</td>
+                    <td id="Nts">------</td>
+                  </tr>
+                  <tr>
+                        <td id="Puname">------</td>
+                        <td id="Puts">------</td>
+                    </tr>
+                </tbody>
+              </table>
+                <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
+                <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-database.js"></script>
+
+
+
+                <script>
+                // Your web app's Firebase configuration
+                var firebaseConfig = {
+                    apiKey: "AIzaSyCxPQOWBwRwIGCm8nKi6vU_SPNwHtX187k",
+                    authDomain: "facedb-6a754.firebaseapp.com",
+                    databaseURL: "https://facedb-6a754.firebaseio.com",
+                    projectId: "facedb-6a754",
+                    storageBucket: "facedb-6a754.appspot.com",
+                    messagingSenderId: "753782679664",
+                    appId: "1:753782679664:web:27e49904779c711ea2ecb5"
+                };
+                firebase.initializeApp(firebaseConfig);
+
+                </script>
+                <script src="script.js"></script>
+                
+                <style>
+                  
+h1{
+  font-size: 30px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 15px;
+}
+table{
+  width:97%;
+  table-layout: fixed;
+  border: 2px solid rgba(255,255,255,0.3);
+  margin: 20px;
+  
+  
+}
+.tbl-header{
+  background-color: rgba(255,255,255,0.3);
+  
+ }
+.tbl-content{
+  height:300px;
+  overflow-x:auto;
+  margin-top: 0px;
+  border: 1px solid rgba(255,255,255,0.3);
+}
+th{
+  padding: 20px 15px;
+  text-align: left;
+  font-weight: 500;
+  font-size: 15px;
+  color: #fff;
+  text-transform: uppercase;
+  border: 2px solid rgba(255,255,255,0.3);
+  
+}
+td{
+  padding: 15px;
+  text-align: left;
+  vertical-align:middle;
+  font-weight: 300;
+  font-size: 15px;
+  color: #fff;
+  border-bottom: solid 1px rgba(255,255,255,0.1);
+  border: 2px solid rgba(255,255,255,0.3);
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+body{
+  background: -webkit-linear-gradient(left, #0C131C, #00595f);
+  background: linear-gradient(to right, #0C131C, #00595f);
+  font-family: 'Roboto', sans-serif;
+}
+section{
+  margin: 50px;
+}
+
+
+
+
+::-webkit-scrollbar {
+    width: 6px;
+} 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+} 
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+}
+                </style>
+    
+</body>
+
+</html>
