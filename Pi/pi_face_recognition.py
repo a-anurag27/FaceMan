@@ -17,10 +17,11 @@ from firebase_admin import credentials
 from datetime import datetime
 k=[]
 config = {
-    "apiKey": "AIzaSyCxPQOWBwRwIGCm8nKi6vU_SPNwHtX187k",
-    "authDomain": "facedb-6a754.firebaseapp.com",
-    "databaseURL": "https://facedb-6a754.firebaseio.com",
-    "storageBucket": "facedb-6a754.appspot.com"
+# Add Credentials here
+    "apiKey": "", 
+    "authDomain": "",
+    "databaseURL": "",
+    "storageBucket": ""
 }
 firebase = pyrebase.initialize_app(config)
 db = firebase.database()
